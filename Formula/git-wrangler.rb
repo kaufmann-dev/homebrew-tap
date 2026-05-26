@@ -5,7 +5,7 @@
 class GitWrangler < Formula
   desc "Orchestrate Git operations across many repositories."
   homepage "https://github.com/kaufmann-dev/git-wrangler"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on "gh"
@@ -14,8 +14,8 @@ class GitWrangler < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.1.0/git-wrangler_0.1.0_darwin_amd64.tar.gz"
-      sha256 "33cc57d68f9b0514b6468797e6fdba87e902b8cd07deac3e0dff8a1529ad7623"
+      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.2.0/git-wrangler_0.2.0_darwin_amd64.tar.gz"
+      sha256 "18c4c32f447ef0357129ff6bcd72e387ad37acbff9c1ef5ee1dc77a3e6fe8225"
 
       def install
         bin.install "git-wrangler"
@@ -25,8 +25,8 @@ class GitWrangler < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.1.0/git-wrangler_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f880b35ab50474a9d433ad4042468a236203f4f2dd60fc00f76ff94297b1ea3e"
+      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.2.0/git-wrangler_0.2.0_darwin_arm64.tar.gz"
+      sha256 "7d3b964b8dc3e8d3d2ab12206505be59478bb1b2e1cafadbc43f2b8d37e353ab"
 
       def install
         bin.install "git-wrangler"
@@ -39,8 +39,8 @@ class GitWrangler < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.1.0/git-wrangler_0.1.0_linux_amd64.tar.gz"
-      sha256 "e396918eb46d4298037b8d5ab4213bf345fd90a862fd1930fa3d4b879b8aa7bd"
+      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.2.0/git-wrangler_0.2.0_linux_amd64.tar.gz"
+      sha256 "b673c0b7501aa3294e50c272118717c14449d018d6175421c73070fb9993df06"
       def install
         bin.install "git-wrangler"
         bash_completion.install "completions/git-wrangler.bash" => "git-wrangler"
@@ -49,8 +49,8 @@ class GitWrangler < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.1.0/git-wrangler_0.1.0_linux_arm64.tar.gz"
-      sha256 "f486a4268471afc781809c53d0b3338bff02b2fc38cd0b562b01486ab87184d8"
+      url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v0.2.0/git-wrangler_0.2.0_linux_arm64.tar.gz"
+      sha256 "722d06e68262b42c0f8a22a543ce7cbb1bfaa2d6890c911d1bad548cfc0d3f4f"
       def install
         bin.install "git-wrangler"
         bash_completion.install "completions/git-wrangler.bash" => "git-wrangler"
