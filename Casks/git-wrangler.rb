@@ -4,22 +4,22 @@ cask "git-wrangler" do
 
   on_macos do
     on_intel do
-      sha256 "b3a6e4f5cd566f5c03625b4bbb09019eb81fb9a21b4815310622bff0af713f97"
+      sha256 "e06be4b601f3a7b558c672e0bb3b75be84d1af50e1e537f6eaf0f7b9c5149725"
       url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v#{version}/git-wrangler_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "5f215d782c6f9eb82c3b60ea0ad85a67fb74c03d685d85852c166f1ee8a5ead6"
+      sha256 "7a9353293ac8e47c6e7de62cd1704f174b713ccd6b3040b416b72dbc55c771a5"
       url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v#{version}/git-wrangler_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "40126c6edab4e999fd1c72b60224869cd1d2f7878e4f0c0ef20355e414e924d2"
+      sha256 "f2c12a14b48fb060c36559c3a26afdf92dcea05944539cf79e017b9b4b0d83ea"
       url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v#{version}/git-wrangler_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "f716cc8305285adddc6f172633e97a5ddf53f3b493f599f0491522bcd20f7515"
+      sha256 "88d7a6f2f1e838bb47ae22e51c8b0e415e79aa878f6987e59cafe0e24ccd27af"
       url "https://github.com/kaufmann-dev/git-wrangler/releases/download/v#{version}/git-wrangler_#{version}_linux_arm64.tar.gz"
     end
   end
